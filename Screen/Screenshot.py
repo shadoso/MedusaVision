@@ -12,7 +12,6 @@ class Redungeon:
         :param sizey: Defines how long a column will be.
         :param slicer: Reduce image size by index.
         :param frames: Defines how many arrays will be stacked.
-        :param debug: It will show the images if it's True, size = 500x500
         """
         self.__x = x
         self.__y = y
