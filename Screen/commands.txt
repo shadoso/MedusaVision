@@ -1,7 +1,11 @@
 scrcpy commands:
 scrcpy --always-on-top --window-x 1450 --window-y 10 --bit-rate 12M  # Open
+
 scrcpy --bit-rate 12M --no-display --crop 1080:1080:0:600 --record redungeon_character.mp4  # Record character
+
 scrcpy --bit-rate 12M --crop 1080:1080:0:0 --no-display --record redungeon_numbers.mp4  # Record numbers
+
+scrcpy --bit-rate 12M --no-display --record redungeon_teste.mp4  # Just record
 
 ffmpeg commands:
 ffmpeg -i /home/bismutoso/Imagens/vids/redungeon_last.mp4 -vf fps=2 /home/bismutoso/Imagens/vids/framis/last_redungeon%05d.png  # Extract frames
