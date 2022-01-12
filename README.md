@@ -32,7 +32,14 @@ All the images should be collected in the same resolution example, 1080x1080, la
 # Challenges
 - Limited resources: Google collab will help you but he isn’t a good big brother, it will let you play on his Tesla K80 but for a limited amount of time, so if you have a database that contain more than 1500 images make sure to know the maximum amount of epochs you can do before you receive timeout.
 - Lack of info: At **“Deep Q-Learning for Atari Breakout”**, they are using an incorrect method to teach the AI to play, “IT WORKS” but you shouldn’t stack frames on CNN! after hours of searching I found this explanation, since CNN solves a spatial problem stacking all images will make the CNN consider everything as just one single image, to it be able to understand the concept of Frames you should use LSTM which solves time series problems where the sequence matters, so your model should be a CNN-LSTM.
-**https://stackoverflow.com/questions/53020898/multiple-input-cnn-for-images?rq=1**
 - More lack of info: Maybe you want to use raw pixels as an input or a custom environment, most of the “GOOD” material for this area isn’t free, I know there are many good articles or tutorials about this but most of it is really complex, most of the time you will be merely copying and pasting code and you won’t know why you are doing this, I strongly recommend you to search every single aspect of it instead just being a copy machine.
-- Medium: This site has a lot of good info, make sure to always clear everything on privacy, every time Medium blocks you saying you already read the maximum amount allowed. The link below is a good explanation of how CNN-LSTM works.  
+- Those 2 links will help to understand CNN-LSTM.  
+**https://stackoverflow.com/questions/53020898/multiple-input-cnn-for-images?rq=1**  
 **https://medium.com/smileinnovation/how-to-work-with-time-distributed-data-in-a-neural-network-b8b39aa4ce00**
+
+# Methods
+- Input: Your input can have many formats, you can use 3 channel colors or greyscale or edge, and you can even change a few things, I will give a short explanation about it and then I tell you why I choose my input shape.
+
+**Let’s consider that in all these examples we are working with an image of 420x420.**
+- Edge: When you use edge detection, most of the time you keep more than enough info to make the AI work and also make the training much faster, imagine that you have a Rubik’s cube, and just one side has white squares and the rest of it black square, you probably could solve it under 1 minute, is pretty clear what you need to do, you are not overwhelmed with info. Of course, there is a problem sometimes you lose some important info like color and depth.
+- 
