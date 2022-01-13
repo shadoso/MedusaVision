@@ -38,8 +38,12 @@ All the images should be collected in the same resolution example, 1080x1080, la
 **https://medium.com/smileinnovation/how-to-work-with-time-distributed-data-in-a-neural-network-b8b39aa4ce00**
 
 # Methods
+
+**Under manutence**
 - Input: Your input can have many formats, you can use 3 channel colors or greyscale or edge, and you can even change a few things, I will give a short explanation about it and then I tell you why I choose my input shape.
 
 **Let’s consider that in all these examples we are working with an image of 420x420.**
 - Edge: When you use edge detection, most of the time you keep more than enough info to make the AI work and also make the training much faster, imagine that you have a Rubik’s cube, and just one side has white squares and the rest of it black square, you probably could solve it under 1 minute, is pretty clear what you need to do, you are not overwhelmed with info. Of course, there is a problem sometimes you lose some important info like color and depth.
-- 
+- Greyscale: With Greyscale, you keep depth and colors, is strange to say colors when you just have 0 to 255 shades, but if you look at the raw number in the array you will notice the difference between a gray “Red” and a “ gray “Yellow”, and you may think how much hard is this for the AI?
+Imagine that our Rubik’s cube now has a white side and 2 gray sides with different shades and the rest all black squares, it’s still much easier than a true Rubik’s cube, let’s say that you can solve this in 3 minutes. While training an AI time is priceless, when you do 1 “Greybiks Cube” you would already solve 3 “Edgik Cubes”, and of course, each one will have a different method to solve.
+- RGB:
