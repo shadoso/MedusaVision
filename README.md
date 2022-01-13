@@ -1,5 +1,4 @@
-**Medusa Vision**
-Project in progress.
+# **Medusa Vision project in progress**
 
 Medusa Vision is a DQN that receives an image as input instead of an environment.
 
@@ -7,7 +6,8 @@ Medusa Vision is a DQN that receives an image as input instead of an environment
 - Challenges: All the problems that I had to face.
 - Methods: Why I chose to use that method.
 
-
+# In this link, you will see my actual progress detecting the game objects.
+https://drive.google.com/drive/folders/1mBtmmveezPJCH9r2X8FMR_WIkWHH2-4b?usp=sharing
 
 # Notes
 - OS: Ubuntu, CentOS, Debian, Fedora, OpenSUSE, RHEL, SLES, WSL-Ubuntu and ~~Windows~~.  
