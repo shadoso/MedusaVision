@@ -39,7 +39,7 @@ All the images should be collected in the same resolution example, 1080x1080, la
 
 # Methods
 
-**Under manutence**
+# **Under manutence**
 - Input: Your input can have many formats, you can use 3 channel colors or greyscale or edge, and you can even change a few things, I will give a short explanation about it and then I tell you why I choose my input shape.
 
 **Let’s consider that in all these examples we are working with an image of 420x420.**
